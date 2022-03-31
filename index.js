@@ -4,7 +4,7 @@ const galleryDiv = document.getElementById('gallery-div');
 function galleryImages() {
 
     galleryDiv.innerHTML = "";
-    fetch("http://localhost:8080/allGalleryImages")
+    fetch("https://salty-caverns-30855.herokuapp.com/allGalleryImages")
         .then(res => res.json())
         .then(data => {
             
@@ -23,7 +23,7 @@ galleryImages();
 
 function loadAllFoodItems() {
     foodsDiv.innerHTML = "";
-    fetch("http://localhost:8080/allFoodItems")
+    fetch("https://salty-caverns-30855.herokuapp.com/allFoodItems")
         .then(res => res.json())
         .then(data => {
             data.forEach(foodItem => {

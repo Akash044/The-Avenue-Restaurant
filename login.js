@@ -11,7 +11,7 @@ loginBtn.addEventListener('click',(e) => {
     const inputPassword = password.value;
     // console.log(inputEmail, inputPassword);
 
-    fetch(`http://localhost:8080/login`,{
+    fetch(`https://salty-caverns-30855.herokuapp.com/login`,{
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({email: inputEmail, password: inputPassword})
